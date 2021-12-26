@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adiviná el número</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Adiviná el número</h1>
+        <div class="contenedor-reglas-juego">
+            <h2>Reglas:</h2>
+            <ol>
+                <li>El número ganador puede ser cualquier valor entre 1 y 100.</li>
+                <li>Tenés diez intentos para adivinar.</li>
+                <li>Si adivinás la cifra felicidades, ¡Ganaste! Si no, te deseo suerte la próxima vez.</li>
+            </ol>
+            <div class="contenedor-boton">
+            <button class="btn-inicio" id="btn-inicio">Comenzar</button>
+            </div>
+        </div>
+        <div class="ganaste-o-perdiste mantener-oculto" id="ganaste-o-perdiste">
+            <p class="resultado-juego" id="resultado-juego"></p>
+        </div>
+            <div class="contenedor-juego mantener-oculto" id="contenedor-juego">
+                <form>
+                    <label>Ingresá tu número aquí:</label>
+                    <input type="number" class="celda-numero" id='numero-elegido'>
+                    <input type="button" value="Enviar" class="btn-enviar" id="btn-enviar">
+                </form>
+            </div>
+        </div>
+        <div class="contenedor-mensajes">
+            <div class="cartel-pista" id="cartel-pista">           
+            </div>
+            <div class="caliente mantener-oculto" id="caliente">
+                <p>¡Ya casi, Estás muuuy cerca!</p>
+            </div> 
+        </div>
+        <div class="intentos-previos mantener-oculto" id="intentos-previos">
+            <p>Intentos anteriores: <span class="numeros-anteriores" id="numeros-anteriores"></span></p>
+            <p>Intentos restantes: <span id="contador-intentos" class="contador-intentos">10</span></p>
+        </div>
+
+
+    <script src="jerbito.js"></script>
+    </body>
+</html>
